@@ -1,0 +1,367 @@
+i {
+    color: green;
+}
+
+span {
+    color: green;
+}
+
+img {
+    width: 800px;
+    height: 550px;
+}
+
+ol {
+    list-style-type: disc;
+}
+
+@media screen and (max-width: 980px) {
+    #pagewrap {
+        width: 95%;
+    }
+    #content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+    #sidebar {
+        width: 30%;
+    }
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------
+*/
+
+
+/* Для всех экранов */
+
+section h2 {
+    font-size: 2rem;
+}
+
+section div {
+    font-size: 1rem;
+}
+
+
+/* Для ширины 1024 пикселей и меньше */
+
+@media screen and (max-width: 1024px) {
+    section h2 {
+        font-size: 2.2rem;
+    }
+    section div {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Для ширины 600 пикселей и меньше */
+
+@media screen and (max-width: 600px) {
+    section h2 {
+        font-size: 2.5rem;
+    }
+    section div {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* --------------------------------------------------------- */
+
+@media screen and (min-width: 992px) {
+    /* Дополнительные стили для десктопных устройств */
+    body {
+        background-color: #f0f0f0;
+    }
+    .container {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+}
+
+
+/* Стили для планшетов */
+
+@media screen and (max-width: 991px) {
+    /* Дополнительные стили для планшетов */
+    .container {
+        padding: 10px;
+    }
+}
+
+
+/* Стили для мобильных устройств */
+
+@media screen and (max-width: 767px) {
+    /* Дополнительные стили для мобильных устройств */
+    .container {
+        padding: 5px;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+h1 {
+    font-size: 36px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    width: 100%;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+header {
+    background-color: #f8c1f2;
+    padding: 10px;
+    position: fixed;
+    /* Фиксированное позиционирование */
+    top: 0;
+    /* Закрепляем заголовок наверху */
+    width: 100%;
+}
+
+.content {
+    margin-top: 50px;
+    /* Учитываем высоту заголовка, чтобы контент не перекрывался */
+    padding: 5px;
+}
+
+
+/* ---------------------------------------------------------- */
+
+.text {
+    padding-left: 20px;
+}
+
+.podjerk {
+    text-decoration: underline;
+    /* Подчеркиваем текст */
+}
+
+.pop {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin-bottom: 20px;
+    margin: 0 0 10px;
+}
+
+.pup {
+    width: 750px;
+    height: 500px;
+}
+
+.pop {
+    padding-left: 20px;
+}
+
+
+/* Медиа-запрос для мобильных устройств */
+
+@media screen and (max-width: 100%) {
+    /* Специфические стили для мобильных устройств */
+    p {
+        text-align: center;
+        /* Выравнивание текста по центру для мобильных устройств */
+    }
+}
+
+.ol2 {
+    width: 900px;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+/* Общие стили */
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu-toggle {
+    display: none;
+    /* Скрыть кнопку меню на больших экранах */
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu ul h1 h3 {
+    list-style-type: none;
+    padding: 50;
+    margin: 0;
+    display: flex;
+}
+
+.main-menu ul li {
+    padding: 50px;
+}
+
+
+/* Медиа-запрос для мобильных устройств */
+
+@media only screen and (max-width: 414px) {
+    /* Разрешение экрана iPhone 11 */
+    .main-menu {
+        display: none;
+        margin: 0 auto;
+        /* Скрыть меню на маленьких экранах */
+    }
+    .menu-toggle {
+        display: block;
+        /* Показать кнопку меню на маленьких экранах */
+    }
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+    .menu-toggle:before {
+        content: "☰";
+        /* Иконка для кнопки меню */
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main-menu {
+        display: none;
+        /* Скрыть меню на маленьких экранах */
+    }
+    .menu-toggle {
+        display: block;
+        /* Показать кнопку меню на маленьких экранах */
+    }
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+    .menu-toggle:before {
+        content: "☰";
+        /* Иконка для кнопки меню */
+        font-size: 24px;
+    }
+    .content {
+        margin: 0 auto;
+        /* Автоматическое выравнивание по центру */
+        max-width: 0px;
+        /* Ширина контейнера */
+    }
+}
+
+.header {
+    margin: 0 auto;
+    /* Автоматическое выравнивание по центру */
+    max-width: 300px;
+    /* Ширина контейнера */
+}
+
+.content {
+    text-align: center;
+    /* Центрирование текста */
+}
+
+
+/* Медиа-запрос для мобильных устройств (iPhone 13 Pro) */
+
+@media only screen and (max-width: 428px) {
+    .header {
+        padding: 10px;
+        /* Уменьшим отступы для более компактного отображения */
+    }
+    .content {
+        margin: 0 auto;
+        /* Автоматическое выравнивание по центру */
+        padding: 10px;
+        /* Увеличим отступы для лучшего визуального эффекта */
+        max-width: 300px;
+        /* Ширина контейнера */
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    /* Центрирование текста */
+}
+
+.tim {
+    padding: 30px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.content {
+    text-align: center;
+    /* Центрирование текста */
+    /* Автоматическое выравнивание по центру */
+    max-width: 400px;
+    /* Ширина контейнера */
+    padding: 20px;
+}
+
+img {
+    max-width: 50%;
+}
+
+.footer {
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
